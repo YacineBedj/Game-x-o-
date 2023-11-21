@@ -1,0 +1,93 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #1f1f73 27%, rgb(0, 212, 255) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.score{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 14px;
+    font-size: 25px;
+    margin: 20px 0 30px;
+    text-transform: capitalize;
+    border-radius: 6px;
+}
+.score span{
+    text-transform: uppercase;
+    background-color: #2020ca ;
+    padding: 5px;
+    color: white;
+}
+table{
+    border-spacing:0px;
+}
+table th{
+    border: 5px solid white;
+    padding: 40px;
+    width:80px;
+    height: 80px;
+    font-size: 40px;
+}
+@media(max-width:575px){
+    .score{
+        width: 300px;
+
+    }
+    table th{
+        border: 5px solid rgb(255, 255, 255);
+        padding: 20px;
+        width:80px;
+        height: 80px;
+        font-size: 40px;
+    }
+}
+.win{
+    display: none;
+    text-align: center;
+    background-color: green;
+    color: white;
+    height:50px;
+    font-size: 40px;
+    padding: 10px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+}
+.over{
+    display: none;
+    border: none;
+    text-align: center;
+    background-color: red;
+    color: white;
+    height:60px;
+    font-size: 40px;
+    padding: 10px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    bottom: 40%;
+    cursor: pointer;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+footer span{
+    text-transform: uppercase;
+    background-color: #2020ca ;
+    padding: 5px;
+    color: white;
+}
